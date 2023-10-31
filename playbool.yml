@@ -1,0 +1,8 @@
+---
+- name: Instalar Apache en servidores web
+  hosts: servers
+  tasks:
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
